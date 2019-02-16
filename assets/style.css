@@ -1,10 +1,18 @@
-#bg {
+
+.FORM{
   position: fixed;
-  min-height: 100%;
-  min-width: 1024px;
-  width: 100%;
-  height: auto;
-  position: fixed;
-  top: 0;
-  left: 0;
+  left:0;
+  bottom: 0;
+  width: 100;
+  background-color: aquamarine;
+  text-align: center;
+}
+.BACKGROUND {
+ background-image: url('abstract-background-blur-255379.jpg');
+ height: 100vh;
+
+}
+.card {
+  background-color: rgb(166, 176, 196);
+  
 }

@@ -37,15 +37,16 @@ class ItunesController {
     //changes the button to loading while songs load
     document.querySelector('#get-music-button').textContent = 'LOADING....'
     itunesService.getMusicByArtist(artist)
-    let form = e.target;
-    form.reset();
+
   }
-}
-function play(element) {
-  document.getElementById('audio-player').setAttribute('src', element);
-}
 
 
+  play(url) {
+
+    document.getElementById('audioPlayer').setAttribute('src', url)
+  }
+
+}
 
 
 export default ItunesController
