@@ -1,5 +1,6 @@
 
 .FORM{
+  margin-top: 20px;
   position: fixed;
   left:0;
   bottom: 0;
@@ -8,11 +9,24 @@
   text-align: center;
 }
 .BACKGROUND {
- background-image: url('abstract-background-blur-255379.jpg');
+ 
  height: 100vh;
+ background-position: fixed;
+ background-repeat: no-repeat, repeat;
+   background: url('abstract-background-blur-255379.jpg') no-repeat center fixed; 
+  background-size: cover;
+
 
 }
 .card {
-  background-color: rgb(166, 176, 196);
+  background-color: rgba(199, 212, 238, 0.242);
+  margin: 10px, 10px, 10px, 10px;
+  padding: 10px, 10px, 10px, 10px;
   
+  
+}
+
+@media(max-width: 720px){
+  font-weight: 100;
+  font-size: 3rem;
 }

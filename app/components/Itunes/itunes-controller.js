@@ -8,7 +8,9 @@ function drawSongs() {
   let songs = itunesService.Songs
   let template = ''
   songs.forEach(s => {
-    template += s.getTemplate()
+    if (s.kind == "song") {
+      template += s.getTemplate()
+    }
   });
   document.getElementById('available-songs').innerHTML = template
 }
