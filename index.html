@@ -7,19 +7,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Music Is Fun!</title>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css'>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
-        <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
-        <div class="form-group">
-            <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
-            <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
-        </div>
-    </form>
-    <div id="songs">
 
+    <section class="container-fluid mx-2">
+
+        <div class="row">
+            <div class="col-3 justify-content: center;"></div>
+            <!-- <div id="bg">
+                <img src="/abstract-background-blur-255379.jpg" alt="background">
+            </div> -->
+            <form class="form-inline my-2" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
+                <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
+                <div class="form-group">
+                    <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
+                    <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
+                    <audio id="audio-player" controls src=""></audio>
+                </div>
+            </form>
+        </div>
+        <div id="songs">
+
+            <div class="row" id='available-songs'>
+            </div>
+    </section>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="module" src="app/main.js"></script>
