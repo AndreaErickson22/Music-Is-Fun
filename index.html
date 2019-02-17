@@ -5,44 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Music Is Fun!</title>
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css'>
     <link rel="stylesheet" href="assets/style.css">
+    <title>Music Is Fun!</title>
 </head>
 
 <body class="BACKGROUND">
 
     <section class="container-fluid mx-2">
+        <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+            <div class="row fixed">
 
-        <div class="row fixed">
-            <div class="col-12">
-
-                <form id="FORM" class="form-inline my-2" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
-                    <div class="row">
-                        <div class="class col-12">
-                            <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
-                                <button type="submit" class="btn btn-success" id="get-music-button">Get Music</button>
-
-                            </div>
-                        </div>
+                <div class="col-12 align-content-center">
+                    <div class="headerText">
+                        <h2>Get your favorite music!</h2>
                     </div>
-                </form>
-                <div class="Audio">
-                    <audio controls autoplay src="" id="audioPlayer"></audio>
-                </div>
+                    <form id="FORM" class="form-inline my-2" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
 
-                <div id="songs">
-                </div>
-                <div class="row">
-                    <div class="class col-12">
-                        <div class="row" id='available-songs'>
+                        <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
+                            <button type="submit" class="btn btn-success" id="get-music-button">Get Music</button>
                         </div>
-                    </div>
+                    </form>
+                    <div class="row Audio">
 
+                        <audio controls autoplay src="" id="audioPlayer"></audio>
+
+                    </div>
                 </div>
+
             </div>
+        </nav>
+        <div id="songs">
+        </div>
+        <div class="class col-12 mx-2 ALBUM">
+            <div class="row" id='available-songs'>
+            </div>
+        </div>
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

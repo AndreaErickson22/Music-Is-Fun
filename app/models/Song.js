@@ -16,7 +16,7 @@ export default class Song {
         <div class="card-body text-center">
         <h5 class="artist">${this.artist}</h5>
           <h5 class="song-title">${this.title}</h5>
-          <button class="btn btn-primary" onclick="app.controllers.itunesCtrl.play('${this.preview}')">Play Song</button>
+          <button class="btn btn-success" onclick="app.controllers.itunesCtrl.play('${this.preview}')">Play Song</button>
            <p class="card-text">$${this.price}</p>
         </div>
       </div>`

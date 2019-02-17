@@ -1,13 +1,4 @@
 
-.FORM{
-  margin-top: 20px;
-  position: fixed;
-  left:0;
-  bottom: 0;
-  width: 100;
-  background-color: aquamarine;
-  text-align: center;
-}
 .BACKGROUND {
  
  height: 100vh;
@@ -22,6 +13,7 @@
   background-color: rgba(199, 212, 238, 0.242);
   margin: 10px, 10px, 10px, 10px;
   padding: 10px, 10px, 10px, 10px;
+   font-family: 'Anton', sans-serif;
   
   
 }
@@ -29,4 +21,50 @@
 @media(max-width: 720px){
   font-weight: 100;
   font-size: 3rem;
+}
+#Audio {
+   margin-left: auto;
+  margin-right: auto;
+    margin-top: 15px;
+  margin-bottom: 15px;
+
+}
+#FORM {
+  margin-left: 10px;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  
+}
+.ALBUM {
+  margin-top: 300px;
+}
+#mainNavbar {
+  background: rgba(204, 16, 242, 0.728);
+  transition: background 500ms;
+  height: 300px;
+border: 10px rgba(32, 227, 230, 0.858);
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  font-size: 2rem;
+}
+.headerText {
+    margin-left: 10px;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+font-family: 'Anton', sans-serif;
+font-size: 2rem;
+}
+.form-group {
+      margin-left: 10px;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: 'Anton', sans-serif;
+}
+#available-songs{
+    font-family: 'Anton', sans-serif;
 }
