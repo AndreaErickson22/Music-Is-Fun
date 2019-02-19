@@ -11,8 +11,8 @@ export default class Song {
     }
     getTemplate() {
         return ` 
-    <div class="card col-lg-4 col-sm-12 text-center m-1">
-        <img class="card-img-top img-fluid p-4" src="${this.albumArt}" alt="Card image cap">
+    <div class="card col-lg-3 col-sm-12 text-center m-1">
+        <img class="card-img-top img-fluid p-1" src="${this.albumArt}" alt="Card image cap">
         <div class="card-body text-center">
         <h5 class="artist">${this.artist}</h5>
           <h5 class="song-title">${this.title}</h5>

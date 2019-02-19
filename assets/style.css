@@ -22,11 +22,13 @@
   font-weight: 100;
   font-size: 3rem;
 }
-#Audio {
+#audio {
    margin-left: auto;
   margin-right: auto;
     margin-top: 15px;
   margin-bottom: 15px;
+  flex-flow: row;
+  background-position-x: 25px;
 
 }
 #FORM {
@@ -40,10 +42,9 @@
   margin-top: 300px;
 }
 #mainNavbar {
-  background: rgba(204, 16, 242, 0.728);
+  background: rgba(143, 54, 221, 0.851);
   transition: background 500ms;
-  height: 300px;
-border: 10px rgba(32, 227, 230, 0.858);
+  height: 250px;
   padding: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -59,7 +60,7 @@ font-family: 'Anton', sans-serif;
 font-size: 2rem;
 }
 .form-group {
-      margin-left: 10px;
+  margin-left: 10px;
   margin-right: auto;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -67,4 +68,5 @@ font-size: 2rem;
 }
 #available-songs{
     font-family: 'Anton', sans-serif;
+  
 }
